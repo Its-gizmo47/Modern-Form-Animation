@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Jost');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faaa8d;
+}
+form{
+    height: 60vh;
+    width: 25vw;
+    border-radius: 10px;
+    background-color: #feefdd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wrap{
+    width: 80%;
+    position: relative;
+}
+.wrap input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 1rem .5rem;
+    font-size: 1.4rem;
+}
+.wrap label{
+    position: absolute;
+    top: 18px;
+    left: 6px;
+}
+.wrap label span{
+    display: inline-block;
+    font-size: 1.4rem;
+    transition: .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrap input:focus + label span,
+.wrap input:valid + label span{
+    color: #e8490f;
+    transform: translateY(-38px);
+}
+.wrap input:focus,
+.wrap input:valid{
+    outline: none;
+    border-bottom-color: #e8490f;
+}
+form button{
+    font-family: inherit;
+    display: inline-block;
+    width: 80%;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+    margin-top: 1rem;
+    background-color: #201e1f;
+    color: white;
+}
+form button:focus{
+    outline: none;
+}
+form button:active{
+    transform: scale(0.98);
+}
+form a{
+    text-decoration: none;
+    color: royalblue;
+}
+form p{
+    width: 80%;
+    padding-left: 2px;
+}
